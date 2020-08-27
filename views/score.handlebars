@@ -1,0 +1,37 @@
+<head>
+    <title>Annual Lineworkers Rodeo Scoring | {{#each arrays}} {{title}} {{/each}}</title>
+    {{> main/head-block}}
+    <!-- scores page js script -->
+    <script type="text/javascript" src="/assets/js/score.js"></script>
+</head>
+<body class="background mx-auto">
+
+    {{#each arrays}}
+        {{> main/title-block}}
+    {{/each}}
+
+    <main>
+
+        <section class="section-container mx-auto text-center">
+
+            <p class="item-title mx-auto">Select Competition Year</p>
+            
+            <select id="year-select">
+                {{#each arrays}}
+                    {{#each years}}
+                        {{> year/year-block}}
+                    {{/each}}
+                {{/each}}
+            </select>
+
+            <div id="comp-menu-container"></div>
+
+        </section>
+
+        <section id="score-container"></section>
+
+    </main>
+
+    {{> main/nav-menu-block}}
+
+</body>

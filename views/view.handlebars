@@ -1,0 +1,54 @@
+<head>
+    <title>Annual Lineworkers Rodeo Scoring | {{title}}</title>
+    {{> main/head-block}}
+    <!-- view page js script -->
+    <script type="text/javascript" src="/assets/js/view.js"></script>
+</head>
+<body class="background mx-auto">
+
+    {{> main/title-block}}
+
+    <main>
+
+        <section class="section-container mx-auto text-center">
+
+            <p class="mini-title mx-auto">View and Edit Items</p>
+
+            <p class="item-title mx-auto">Select a Category to View/Edit</p>
+
+            <select id="view-menu">
+                <option>Tiers</option>
+                <option>Events</option>
+                <option>Organizations</option>
+                <option>Years</option>
+            </select>
+
+            <button class="button" id="view-menu-button">Show Items</button>
+
+            <div class="mx-auto text-center" id="view-container"></div>
+
+        </section>
+
+
+        <section class="section-container mx-auto text-center">
+
+            <p class="mini-title mx-auto">Add Items</p>
+
+            <p class="item-title mx-auto">Select an Item to Add</p>
+
+            <select id="add-menu">
+                <option>Tiers</option>
+                <option>Events</option>
+                <option>Organizations</option>
+                <option>Years</option>
+            </select>
+
+            <div id="add-container"></div>
+
+        </section>
+        
+    </main>
+
+    {{> main/nav-menu-block}}
+
+</body>
